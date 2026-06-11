@@ -1,0 +1,262 @@
+// ANSPORTIA — Prisma schema
+// Database: PostgreSQL (Supabase)
+// Run `npm run prisma:migrate` after editing.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// ============================================================
+// ENUMS
+// ============================================================
+
+enum UserRole {
+  SUPER_ADMIN
+  STAFF
+  CUSTOMER
+}
+
+enum CustomerStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum SupplierStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum OrderStatus {
+  DRAFT
+  CONFIRMED
+  PURCHASED
+  IN_PRODUCTION
+  SHIPPED
+  DELIVERED
+  COMPLETED
+  CANCELLED
+}
+
+enum ExpenseType {
+  FREIGHT
+  INSURANCE
+  DOCUMENTATION
+  CUSTOM_CLEARANCE
+  WAREHOUSING
+  LOCAL_DELIVERY
+  MISCELLANEOUS
+}
+
+enum PaymentMethod {
+  BANK_TRANSFER
+  CASH
+  CHEQUE
+  CARD
+  OTHER
+}
+
+enum DocumentType {
+  INVOICE
+  PACKING_LIST
+  QUOTATION
+  PURCHASE_ORDER
+  PAYMENT_RECEIPT
+  SUPPLIER_RECEIPT
+  SHIPPING_DOCUMENT
+  CUSTOMS_DOCUMENT
+  OTHER
+}
+
+// ============================================================
+// MODELS
+// ============================================================
+
+model User {
+  id           String   @id @default(uuid()) @db.Uuid
+  name         String
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  role         UserRole @default(STAFF)
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  createdOrders     Order[]    @relation("OrderCreatedBy")
+  uploadedDocuments Document[] @relation("DocumentUploadedBy")
+
+  @@map("users")
+}
+
+model Customer {
+  id            String         @id @default(uuid()) @db.Uuid
+  customerCode  String         @unique @map("customer_code")
+  companyName   String         @map("company_name")
+  contactPerson String?        @map("contact_person")
+  phone         String?
+  email         String?
+  address       String?
+  country       String?
+  creditLimit   Decimal?       @default(0) @map("credit_limit") @db.Decimal(14, 2)
+  status        CustomerStatus @default(ACTIVE)
+  createdAt     DateTime       @default(now()) @map("created_at")
+
+  orders   Order[]
+  payments CustomerPayment[]
+
+  @@map("customers")
+}
+
+model Supplier {
+  id            String         @id @default(uuid()) @db.Uuid
+  supplierCode  String         @unique @map("supplier_code")
+  supplierName  String         @map("supplier_name")
+  contactPerson String?        @map("contact_person")
+  phone         String?
+  email         String?
+  address       String?
+  country       String?
+  status        SupplierStatus @default(ACTIVE)
+  createdAt     DateTime       @default(now()) @map("created_at")
+
+  orders   Order[]
+  payments SupplierPayment[]
+
+  @@map("suppliers")
+}
+
+model Product {
+  id          String   @id @default(uuid()) @db.Uuid
+  productCode String   @unique @map("product_code")
+  name        String
+  category    String?
+  description String?
+  unit        String?
+  weight      Decimal? @db.Decimal(12, 3)
+  dimensions  String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  orderItems OrderItem[]
+
+  @@map("products")
+}
+
+model Order {
+  id         String      @id @default(uuid()) @db.Uuid
+  orderNo    String      @unique @map("order_no")
+  customerId String      @map("customer_id") @db.Uuid
+  supplierId String?     @map("supplier_id") @db.Uuid
+  orderDate  DateTime    @default(now()) @map("order_date")
+  currency   String      @default("USD")
+  status     OrderStatus @default(DRAFT)
+  remarks    String?
+  createdById String?    @map("created_by") @db.Uuid
+  createdAt  DateTime    @default(now()) @map("created_at")
+
+  customer  Customer @relation(fields: [customerId], references: [id])
+  supplier  Supplier? @relation(fields: [supplierId], references: [id])
+  createdBy User?     @relation("OrderCreatedBy", fields: [createdById], references: [id])
+
+  items            OrderItem[]
+  expenses         Expense[]
+  customerPayments CustomerPayment[]
+  supplierPayments SupplierPayment[]
+  documents        Document[]
+
+  @@index([customerId])
+  @@index([supplierId])
+  @@index([status])
+  @@map("orders")
+}
+
+model OrderItem {
+  id           String  @id @default(uuid()) @db.Uuid
+  orderId      String  @map("order_id") @db.Uuid
+  productId    String  @map("product_id") @db.Uuid
+  qty          Decimal @db.Decimal(14, 3)
+  unitCost     Decimal @map("unit_cost") @db.Decimal(14, 2)
+  unitPrice    Decimal @map("unit_price") @db.Decimal(14, 2)
+  subtotalCost Decimal @map("subtotal_cost") @db.Decimal(16, 2)
+  subtotalSale Decimal @map("subtotal_sale") @db.Decimal(16, 2)
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id])
+
+  @@index([orderId])
+  @@map("order_items")
+}
+
+model Expense {
+  id          String      @id @default(uuid()) @db.Uuid
+  orderId     String      @map("order_id") @db.Uuid
+  expenseType ExpenseType @map("expense_type")
+  amount      Decimal     @db.Decimal(14, 2)
+  description String?
+  createdAt   DateTime    @default(now()) @map("created_at")
+
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId])
+  @@map("expenses")
+}
+
+model CustomerPayment {
+  id                   String        @id @default(uuid()) @db.Uuid
+  customerId           String        @map("customer_id") @db.Uuid
+  orderId              String?       @map("order_id") @db.Uuid
+  amount               Decimal       @db.Decimal(14, 2)
+  currency             String        @default("USD")
+  paymentMethod        PaymentMethod @map("payment_method")
+  transactionReference String?       @map("transaction_reference")
+  proofUrl             String?       @map("proof_url") // Supabase Storage object path
+  notes                String?
+  paymentDate          DateTime      @default(now()) @map("payment_date")
+
+  customer Customer @relation(fields: [customerId], references: [id])
+  order    Order?   @relation(fields: [orderId], references: [id])
+
+  @@index([customerId])
+  @@index([orderId])
+  @@map("customer_payments")
+}
+
+model SupplierPayment {
+  id                   String        @id @default(uuid()) @db.Uuid
+  supplierId           String        @map("supplier_id") @db.Uuid
+  orderId              String?       @map("order_id") @db.Uuid
+  amount               Decimal       @db.Decimal(14, 2)
+  currency             String        @default("USD")
+  paymentMethod        PaymentMethod @map("payment_method")
+  transactionReference String?       @map("transaction_reference")
+  proofUrl             String?       @map("proof_url") // Supabase Storage object path
+  notes                String?
+  paymentDate          DateTime      @default(now()) @map("payment_date")
+
+  supplier Supplier @relation(fields: [supplierId], references: [id])
+  order    Order?   @relation(fields: [orderId], references: [id])
+
+  @@index([supplierId])
+  @@index([orderId])
+  @@map("supplier_payments")
+}
+
+model Document {
+  id           String       @id @default(uuid()) @db.Uuid
+  orderId      String?      @map("order_id") @db.Uuid
+  documentType DocumentType @map("document_type")
+  fileName     String       @map("file_name")
+  // Supabase Storage object PATH (not a public URL). Generate signed URLs on demand.
+  filePath     String       @map("file_url")
+  uploadedById String?      @map("uploaded_by") @db.Uuid
+  createdAt    DateTime     @default(now()) @map("created_at")
+
+  order      Order? @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  uploadedBy User?  @relation("DocumentUploadedBy", fields: [uploadedById], references: [id])
+
+  @@index([orderId])
+  @@map("documents")
+}

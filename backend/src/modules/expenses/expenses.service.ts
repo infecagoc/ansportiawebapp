@@ -1,0 +1,14 @@
+import { Injectable } from '@nestjs/common';
+import { PrismaService } from '../../prisma/prisma.service';
+
+@Injectable()
+export class ExpensesService {
+  constructor(private readonly prisma: PrismaService) {}
+
+  findByOrder(orderId: string) {
+    return this.prisma.expense.findMany({
+      where: { orderId },
+      orderBy: { createdAt: 'desc' },
+    });
+  }
+}
