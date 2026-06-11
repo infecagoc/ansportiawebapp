@@ -67,7 +67,7 @@ npm run prisma:generate
 npm run prisma:migrate
 
 # 5. Run both apps
-npm run dev          # web on :3000, api on :4000
+npm run dev          # web on :3600, api on :4000
 # or individually:
 npm run dev:web
 npm run dev:api

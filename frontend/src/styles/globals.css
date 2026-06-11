@@ -3,11 +3,90 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
+  /* Light cream canvas, dark petrol ink (noteworthy-style) */
+  --background: #E8E1D6;
+  --foreground: #0E1D24;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Luxury text gradient */
+.text-gold-gradient {
+  background: linear-gradient(120deg, #c9b487 0%, #A88B58 45%, #8a7044 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Animated shimmering gold for hero headline */
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #8a7044 0%,
+    #c9b487 25%,
+    #E8E1D6 50%,
+    #c9b487 75%,
+    #8a7044 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Glassmorphism surface */
+.glass {
+  background: rgba(232, 225, 214, 0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(168, 139, 88, 0.15);
+}
+
+/* Subtle grain/noise overlay helper */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(168, 139, 88, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 139, 88, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ded5c6;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#A88B58, #720E20);
+  border-radius: 8px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

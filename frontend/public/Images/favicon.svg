@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 529.52">
+  <defs>
+    <style>
+      /* Light browser → dark logo */
+      .mark { fill: #172931; }
+      .flag { fill: #720e21; }
+      .wing { fill: #172931; }
+      /* Dark browser → light logo */
+      @media (prefers-color-scheme: dark) {
+        .mark { fill: #e8e1d6; }
+        .flag { fill: #a88b58; }
+        .wing { fill: #c2b3a4; }
+      }
+    </style>
+  </defs>
+  <path class="mark" d="M539.89,314.33v-.07c-48-141.9-195.95-106-195.95-106H50.95C77.45,98.55,176.29,17.06,294.15,17.06c138.18,0,250.19,112.01,250.19,250.19,0,16.11-1.5,31.82-4.44,47.08Z"/>
+  <polygon class="flag" points="249.14 314.26 249.14 512.47 185.4 446.2 100.74 468.62 115.67 378.99 50.94 314.26 249.14 314.26"/>
+  <path class="wing" d="M539.89,314.26v.07c-18.92,99.49-96.81,178.14-195.95,198.14V208.27s147.95-35.91,195.95,106Z"/>
+</svg>

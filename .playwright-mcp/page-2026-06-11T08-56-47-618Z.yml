@@ -1,0 +1,226 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "A ANSPORTIA" [ref=e6] [cursor=pointer]:
+          - /url: /landing
+          - generic [ref=e8]: A
+          - generic [ref=e10]: ANSPORTIA
+        - navigation [ref=e11]:
+          - link "Features" [ref=e12] [cursor=pointer]:
+            - /url: /landing#features
+            - text: Features
+          - link "Process" [ref=e13] [cursor=pointer]:
+            - /url: /landing#process
+            - text: Process
+          - link "Why Us" [ref=e14] [cursor=pointer]:
+            - /url: /landing#why
+            - text: Why Us
+          - link "Contact" [ref=e15] [cursor=pointer]:
+            - /url: /landing#contact
+            - text: Contact
+        - generic [ref=e16]:
+          - link "Sign in" [ref=e17] [cursor=pointer]:
+            - /url: /auth/login
+          - link "Get Started" [ref=e18] [cursor=pointer]:
+            - /url: /auth/login
+            - text: Get Started
+    - main [ref=e20]:
+      - generic [ref=e27]:
+        - generic [ref=e28]: Nepal – China Trade
+        - heading "Trade, refined to perfection." [level=1] [ref=e30]:
+          - text: Trade,
+          - text: refined to perfection.
+        - paragraph [ref=e31]: Orchestrate imports, exports, customer orders, supplier purchases, payments and documents — all in one luxuriously simple cloud platform engineered for cross-border commerce.
+        - generic [ref=e32]:
+          - link "Start trading" [ref=e33] [cursor=pointer]:
+            - /url: /auth/login
+            - text: Start trading
+          - link "Explore the platform" [ref=e35] [cursor=pointer]:
+            - /url: /landing#features
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e44]: 0M+
+          - paragraph [ref=e45]: Trade value managed (USD)
+        - generic [ref=e46]:
+          - generic [ref=e49]: 0+
+          - paragraph [ref=e50]: Orders processed
+        - generic [ref=e51]:
+          - generic [ref=e54]: 0%
+          - paragraph [ref=e55]: Platform uptime
+        - generic [ref=e56]:
+          - generic [ref=e59]: 0hr
+          - paragraph [ref=e60]: Avg. clearance time
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - text: Capabilities
+          - heading "Everything your trade desk needs" [level=2] [ref=e64]
+          - paragraph [ref=e65]: One platform replacing a dozen spreadsheets — designed with the precision of a luxury workspace.
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: ⇄
+            - heading "Imports & Exports" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Track every cross-border shipment end-to-end with live status, customs and landed-cost visibility.
+          - generic [ref=e71]:
+            - generic [ref=e72]: ◎
+            - heading "Customer Orders" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Capture, fulfil and invoice orders with a refined workflow that keeps every client in the loop.
+          - generic [ref=e75]:
+            - generic [ref=e76]: ⊞
+            - heading "Supplier Purchases" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Manage suppliers, purchase orders and incoming inventory from one elegant control center.
+          - generic [ref=e79]:
+            - generic [ref=e80]: ₿
+            - heading "Payments & Ledger" [level=3] [ref=e81]
+            - paragraph [ref=e82]: Reconcile multi-currency payments, balances and receivables with automatic ledger entries.
+          - generic [ref=e83]:
+            - generic [ref=e84]: ⎙
+            - heading "Documents Vault" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Securely store invoices, packing lists and certificates in an encrypted, searchable vault.
+          - generic [ref=e87]:
+            - generic [ref=e88]: ◔
+            - heading "Profit Analytics" [level=3] [ref=e89]
+            - paragraph [ref=e90]: See real-time margins, expenses and profitability across products, routes and partners.
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - text: How it works
+          - heading "From order to profit, beautifully" [level=2] [ref=e94]
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - generic [ref=e102]:
+              - text: "01"
+              - heading "Onboard & connect" [level=3] [ref=e103]
+              - paragraph [ref=e104]: Set up your trade desk, partners and currencies in minutes. Import existing data effortlessly.
+          - listitem [ref=e105]:
+            - generic [ref=e109]:
+              - text: "02"
+              - heading "Record every move" [level=3] [ref=e110]
+              - paragraph [ref=e111]: Log orders, purchases, shipments and payments as they happen — the ledger updates itself.
+          - listitem [ref=e112]:
+            - generic [ref=e116]:
+              - text: "03"
+              - heading "Clear & document" [level=3] [ref=e117]
+              - paragraph [ref=e118]: Generate and store customs documents, invoices and certificates from a single source of truth.
+          - listitem [ref=e119]:
+            - generic [ref=e123]:
+              - text: "04"
+              - heading "Measure profit" [level=3] [ref=e124]
+              - paragraph [ref=e125]: Watch margins, expenses and cash flow in real time and act on what actually drives growth.
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - text: Why Ansportia
+          - heading "The advantage is in the details" [level=2] [ref=e129]
+          - paragraph [ref=e130]: Crafted for traders who refuse to compromise on clarity, control or craftsmanship.
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - generic [ref=e133]: ✓
+              - generic [ref=e134]:
+                - heading "Bank-grade security" [level=3] [ref=e135]
+                - paragraph [ref=e136]: Encrypted storage, role-based access and full audit trails on every record.
+            - generic [ref=e137]:
+              - generic [ref=e138]: ✓
+              - generic [ref=e139]:
+                - heading "Multi-currency native" [level=3] [ref=e140]
+                - paragraph [ref=e141]: Work in USD, CNY and NPR with automatic conversion and reconciliation.
+            - generic [ref=e142]:
+              - generic [ref=e143]: ✓
+              - generic [ref=e144]:
+                - heading "Real-time everywhere" [level=3] [ref=e145]
+                - paragraph [ref=e146]: Your team sees the same live numbers across web, tablet and mobile.
+            - generic [ref=e147]:
+              - generic [ref=e148]: ✓
+              - generic [ref=e149]:
+                - heading "Built for cross-border" [level=3] [ref=e150]
+                - paragraph [ref=e151]: Customs, logistics and document flows tuned for Nepal–China corridors.
+        - generic [ref=e154]:
+          - generic [ref=e155]: ✦
+          - generic [ref=e156]:
+            - paragraph [ref=e157]:
+              - text: One elegant
+              - text: source of truth.
+            - paragraph [ref=e158]: Move with the confidence that every figure, document and shipment is exactly where it should be.
+      - generic [ref=e160]:
+        - generic [ref=e161]: Ready when you are
+        - heading "Elevate your trade desk today" [level=2] [ref=e162]
+        - paragraph [ref=e163]: Join the traders running their entire Nepal–China operation on Ansportia. Set up in minutes — no spreadsheets required.
+        - generic [ref=e164]:
+          - link "Create your account" [ref=e165] [cursor=pointer]:
+            - /url: /auth/login
+            - text: Create your account
+          - link "Talk to our team" [ref=e167] [cursor=pointer]:
+            - /url: /landing/contact
+        - paragraph [ref=e168]:
+          - text: Questions? Email
+          - link "hello@ansportia.com" [ref=e169] [cursor=pointer]:
+            - /url: mailto:hello@ansportia.com
+    - contentinfo [ref=e170]:
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - link "A ANSPORTIA" [ref=e173] [cursor=pointer]:
+            - /url: /landing
+            - generic [ref=e175]: A
+            - generic [ref=e176]: ANSPORTIA
+          - paragraph [ref=e177]: The complete cloud platform for Nepal–China trade — imports, exports, payments, documents and profitability, refined into one elegant workspace.
+          - generic [ref=e178]:
+            - link "in" [ref=e179] [cursor=pointer]:
+              - /url: "#"
+            - link "X" [ref=e180] [cursor=pointer]:
+              - /url: "#"
+            - link "f" [ref=e181] [cursor=pointer]:
+              - /url: "#"
+            - link "be" [ref=e182] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e183]:
+          - heading "Platform" [level=4] [ref=e184]
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - link "Features" [ref=e187] [cursor=pointer]:
+                - /url: /landing#features
+            - listitem [ref=e188]:
+              - link "Process" [ref=e189] [cursor=pointer]:
+                - /url: /landing#process
+            - listitem [ref=e190]:
+              - link "Why Ansportia" [ref=e191] [cursor=pointer]:
+                - /url: /landing#why
+            - listitem [ref=e192]:
+              - link "Pricing" [ref=e193] [cursor=pointer]:
+                - /url: /landing/pricing
+        - generic [ref=e194]:
+          - heading "Company" [level=4] [ref=e195]
+          - list [ref=e196]:
+            - listitem [ref=e197]:
+              - link "About" [ref=e198] [cursor=pointer]:
+                - /url: /landing/about
+            - listitem [ref=e199]:
+              - link "Contact" [ref=e200] [cursor=pointer]:
+                - /url: /landing/contact
+            - listitem [ref=e201]:
+              - link "Sign in" [ref=e202] [cursor=pointer]:
+                - /url: /auth/login
+        - generic [ref=e203]:
+          - heading "Operations" [level=4] [ref=e204]
+          - list [ref=e205]:
+            - listitem [ref=e206]:
+              - link "Imports" [ref=e207] [cursor=pointer]:
+                - /url: /landing#features
+            - listitem [ref=e208]:
+              - link "Exports" [ref=e209] [cursor=pointer]:
+                - /url: /landing#features
+            - listitem [ref=e210]:
+              - link "Documents" [ref=e211] [cursor=pointer]:
+                - /url: /landing#features
+            - listitem [ref=e212]:
+              - link "Payments" [ref=e213] [cursor=pointer]:
+                - /url: /landing#features
+      - generic [ref=e214]:
+        - paragraph [ref=e215]: © 2026 Ansportia. All rights reserved.
+        - generic [ref=e216]:
+          - link "Privacy" [ref=e217] [cursor=pointer]:
+            - /url: /landing#
+          - link "Terms" [ref=e218] [cursor=pointer]:
+            - /url: /landing#
+          - link "Security" [ref=e219] [cursor=pointer]:
+            - /url: /landing#
+  - button "Open Next.js Dev Tools" [ref=e225] [cursor=pointer]:
+    - img [ref=e226]
+  - alert [ref=e229]

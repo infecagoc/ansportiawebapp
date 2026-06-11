@@ -7,7 +7,7 @@ A quick reference for working in this monorepo (npm workspaces).
 ```
 ansportiawebapp/
 ├── backend/          NestJS + Prisma + Supabase Storage  (API on :4000)
-├── frontend/         Next.js 15 (Pages Router) + Tailwind (web on :3000)
+├── frontend/         Next.js 15 (Pages Router) + Tailwind (web on :3600)
 ├── packages/shared/  Shared enums/types
 ├── .mcp.json         Playwright MCP server
 └── SKILLS.md         (this file)
@@ -33,7 +33,7 @@ npm run prisma:migrate              # creates tables in Supabase Postgres
 | Command | Does |
 |---|---|
 | `npm run dev` | Run web + api together |
-| `npm run dev:web` | Frontend only (:3000) |
+| `npm run dev:web` | Frontend only (:3600) |
 | `npm run dev:api` | Backend only (:4000) |
 | `npm run build` | Build all workspaces |
 | `npm run prisma:studio` | Open Prisma Studio (DB GUI) |
@@ -53,6 +53,33 @@ npm run test:e2e             # runs e2e/*.spec.ts (auto-starts dev server)
 which lets an AI agent drive a real browser (navigate, click, screenshot, assert)
 against the running app. The agent picks it up automatically when working in this
 repo — no extra setup beyond `npm install`.
+
+## Landing page (luxury marketing site)
+
+`/landing` is a single animated, scroll-driven page built for a modern luxury feel
+(deep "ink" background + warm gold accents, Playfair Display + Inter fonts).
+
+Stack: **framer-motion** (entrance/scroll animations) + **three.js** via
+`@react-three/fiber` / `@react-three/drei` (the rotating trade-route globe in the
+hero). All 3D is client-only (`dynamic(..., { ssr: false })`).
+
+```
+frontend/src/components/
+├── Header.tsx                 Sticky glass nav (scroll-aware, mobile menu)
+├── Footer.tsx                 Multi-column footer
+└── landing/
+    ├── motion.ts              Shared framer-motion variants (fadeUp, stagger…)
+    ├── TradeGlobe.tsx         three.js hero globe (R3F)
+    └── Section1.tsx … Section6.tsx
+        # 1 Hero (3D globe)  2 Stats  3 Features
+        # 4 Process  5 Why-us (tilt card)  6 CTA
+```
+
+- Theme tokens live in `tailwind.config.ts` (`ink`, `gold`, `champagne`,
+  `bg-gold-gradient`, `shadow-glow`, `animate-shimmer/float`).
+- Helper classes (`.text-shimmer`, `.glass`, `.bg-grid`) are in
+  `src/styles/globals.css`, which also honours `prefers-reduced-motion`.
+- Fonts are wired with `next/font/google` in `src/pages/_app.tsx`.
 
 ## Storage (Supabase, replaces Cloudflare R2)
 

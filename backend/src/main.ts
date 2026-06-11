@@ -20,7 +20,7 @@ async function bootstrap() {
   );
 
   // CORS — restrict to configured frontend origins
-  const origins = (config.get<string>('CORS_ORIGINS') ?? 'http://localhost:3000')
+  const origins = (config.get<string>('CORS_ORIGINS') ?? 'http://localhost:3600')
     .split(',')
     .map((o) => o.trim());
   app.enableCors({ origin: origins, credentials: true });

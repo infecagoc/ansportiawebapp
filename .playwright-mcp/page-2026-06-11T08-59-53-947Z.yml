@@ -1,0 +1,170 @@
+- generic [ref=e2]:
+  - banner:
+    - link "Home" [ref=e4]:
+      - /url: /
+      - img [ref=e5]
+    - generic: Zurich
+    - generic [ref=e9]:
+      - text: hello@noteworthy.studio
+      - button "Copy email" [ref=e10]:
+        - img [ref=e11]
+    - generic:
+      - generic:
+        - generic:
+          - button "Open navigation":
+            - img
+        - generic:
+          - link "Projects":
+            - /url: /projects
+          - link "Studio":
+            - /url: /about
+          - link "Hi!":
+            - /url: mailto:hello@noteworthy.studio
+            - text: Hi!
+            - img
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - heading "noteworthy studio" [level=1] [ref=e16]
+      - generic [ref=e18]: noteworthy is a creative studio crafting digital experiences with just a touch of whimsy.
+      - link "Read about our studio" [ref=e19]:
+        - /url: /about
+        - generic [ref=e20]: Read about our studio
+        - img [ref=e21]
+      - link "Explore our work" [ref=e23]:
+        - /url: /projects
+        - generic [ref=e24]: Explore our work
+        - img [ref=e25]
+      - generic [ref=e27]:
+        - heading "Case studies" [level=1] [ref=e28]
+        - article [ref=e29]:
+          - generic [ref=e31]:
+            - heading "State of Developer Ecosystem Report 2025" [level=1] [ref=e32]:
+              - link "State of Developer Ecosystem Report 2025" [ref=e33]:
+                - /url: /projects/developer-ecosystem-2025
+            - generic [ref=e34]: JetBrains
+        - article [ref=e35]:
+          - generic [ref=e37]:
+            - heading "State of My Democracy" [level=1] [ref=e38]:
+              - link "State of My Democracy" [ref=e39]:
+                - /url: /projects/state-of-democracy-2022
+            - generic [ref=e40]: VoteRunLead
+        - article [ref=e41]:
+          - generic [ref=e43]:
+            - heading "HERE Technologies CES 2026" [level=1] [ref=e44]:
+              - link "HERE Technologies CES 2026" [ref=e45]:
+                - /url: /projects/here-ces-2026
+            - generic [ref=e46]: HERE Technologies
+        - article [ref=e47]:
+          - generic [ref=e49]:
+            - heading "Climatescope 2025" [level=1] [ref=e50]:
+              - link "Climatescope 2025" [ref=e51]:
+                - /url: /projects/climatescope-2025
+            - generic [ref=e52]: BloombergNEF
+        - article [ref=e53]:
+          - generic [ref=e55]:
+            - heading "The Color of Wealth Project" [level=1] [ref=e56]:
+              - link "The Color of Wealth Project" [ref=e57]:
+                - /url: /projects/color-of-wealth-project
+            - generic [ref=e58]: The New School Institute on race, power and political economy
+        - article [ref=e59]:
+          - generic [ref=e61]:
+            - heading "Carbon Knowledge Hub" [level=1] [ref=e62]:
+              - link "Carbon Knowledge Hub" [ref=e63]:
+                - /url: /projects/carbon-knowledge-hub-2024
+            - generic [ref=e64]: BloombergNEF
+      - list [ref=e66]:
+        - listitem [ref=e67]:
+          - img "Vote Run Lead" [ref=e68]
+        - listitem [ref=e69]:
+          - img "BloombergNEF" [ref=e70]
+        - listitem [ref=e71]:
+          - img "HERE Technologies" [ref=e72]
+        - listitem [ref=e73]:
+          - img "The New School Institute on Race, Power and Political Economy" [ref=e74]
+        - listitem [ref=e75]:
+          - img "CAF America" [ref=e76]
+        - listitem [ref=e77]:
+          - img "JetBrains" [ref=e78]
+        - listitem [ref=e79]:
+          - img "TransitionZero" [ref=e80]
+        - listitem [ref=e81]:
+          - img "Center for Global Development" [ref=e82]
+      - generic [ref=e83]:
+        - generic [ref=e85]: We work end-to-end and bring together design, technology, data, and art to create outstanding data visualisations and digital products.
+        - heading "Services" [level=2] [ref=e86]
+        - generic [ref=e87]:
+          - heading "Product design" [level=3] [ref=e88]
+          - list [ref=e91]:
+            - listitem [ref=e92]: Product design
+          - paragraph [ref=e93]: Product design — We dream up, shape, and ship products that your customers will love to use. From discovery and ideation, through user experience design, all the way to whimsical motion and tiny functional tweaks and details, we help you turn your ideas into digital products.
+          - paragraph [ref=e94]: Discovery / ideation / UX/UI design / Data-driven design / Motion design
+          - link "See all projects" [ref=e102]:
+            - /url: /projects
+            - generic [ref=e103]: See all projects
+            - img [ref=e104]
+        - generic [ref=e106]:
+          - heading "Data visualisation" [level=3] [ref=e107]
+          - list [ref=e110]:
+            - listitem [ref=e111]: Data visualisation
+          - paragraph [ref=e112]: Data visualisation — We balance complexity and understanding through considered narratives and intuitive exploration. We take a holistic approach to data visualisation from raw data processing to final touches on meticulously designed charts — whether it's 5, or 50,000 data points.
+          - paragraph [ref=e113]: Data analysis / Data processing / Chart/map design / tooling / Interactive storytelling / Media Installations
+          - link "See all projects" [ref=e121]:
+            - /url: /projects
+            - generic [ref=e122]: See all projects
+            - img [ref=e123]
+        - generic [ref=e125]:
+          - heading "Software development" [level=3] [ref=e126]
+          - list [ref=e129]:
+            - listitem [ref=e130]: Software development
+          - paragraph [ref=e131]: Software development — We believe products are only as good as their implementation. If we can design it, we can build it. From resilient interfaces to the robust APIs and efficient automated processes behind them, we cover the entire development cycle.
+          - paragraph [ref=e132]: Frontend development / Task automation / Content update strategy / Data update strategy / API Design / performance optimisation
+          - link "See all projects" [ref=e140]:
+            - /url: /projects
+            - generic [ref=e141]: See all projects
+            - img [ref=e142]
+      - generic [ref=e144]: Client work is only part of what we do. Take a look at our self-initiated projects.
+      - generic [ref=e145]:
+        - link "Geography games" [ref=e147]:
+          - /url: https://geography.games/europe-quiz/
+        - generic [ref=e149]:
+          - link "GetWaves app" [ref=e150]:
+            - /url: https://getwaves.io/
+            - img "Sample visual of generated svg waves" [ref=e151]
+          - link "Blobmaker app" [ref=e152]:
+            - /url: https://www.blobmaker.app/
+            - img "Sample visual of a generated svg blob" [ref=e153]
+          - link "Public lights of Zurich visual" [ref=e154]:
+            - /url: https://noteworthy.graphics/public-lights-of-zurich
+        - link "Haikei app" [ref=e157]:
+          - /url: https://haikei.app/
+        - generic [ref=e159]:
+          - link "Noteworthy graphics" [ref=e160]:
+            - /url: https://noteworthy.graphics/
+            - img "Cover visual for the noteworthy graphics project" [ref=e161]
+          - link "React Simple Maps" [ref=e162]:
+            - /url: https://www.react-simple-maps.io/
+            - img "Cover visual for the React Simple Maps library" [ref=e163]
+      - complementary [ref=e164]:
+        - heading "Let’s work together!" [level=1] [ref=e166]
+        - paragraph [ref=e168]: Have an idea, or really just need stuff done? Drop us a note!
+        - generic [ref=e170]:
+          - text: hello@noteworthy.studio
+          - button "Copy email" [ref=e171]:
+            - img [ref=e172]
+      - complementary [ref=e174]:
+        - heading "Stay in the loop!" [level=1] [ref=e175]
+        - generic [ref=e176]:
+          - generic [ref=e177]: Enter your email
+          - textbox "Enter your email" [ref=e178]:
+            - /placeholder: you@example.com
+          - button "Subscribe" [ref=e179]
+  - contentinfo [ref=e180]:
+    - generic [ref=e182]:
+      - link "Home" [ref=e183]:
+        - /url: /
+        - img [ref=e184]
+      - generic [ref=e190]:
+        - text: hello@noteworthy.studio
+        - button "Copy email" [ref=e191]:
+          - img [ref=e192]
+      - generic [ref=e194]: © 2026 noteworthy.studio & z creative labs GmbH
