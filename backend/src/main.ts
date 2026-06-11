@@ -25,8 +25,9 @@ async function bootstrap() {
     .map((o) => o.trim());
   app.enableCors({ origin: origins, credentials: true });
 
-  const port = config.get<number>('API_PORT') ?? 4000;
-  await app.listen(port);
+  // Render (and most PaaS) inject PORT — honor it first, fall back to API_PORT for local dev
+  const port = process.env.PORT ?? config.get<number>('API_PORT') ?? 4000;
+  await app.listen(port, '0.0.0.0');
   // eslint-disable-next-line no-console
   console.log(`ANSPORTIA API running on http://localhost:${port}/api/v1`);
 }
