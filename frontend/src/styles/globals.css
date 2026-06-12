@@ -3,19 +3,138 @@
 @tailwind utilities;
 
 :root {
-  /* Light cream canvas, dark petrol ink (noteworthy-style) */
-  --background: #E8E1D6;
-  --foreground: #0E1D24;
+  /*
+   * Brand palette — SINGLE SOURCE OF TRUTH.
+   * Values are space-separated RGB channels so Tailwind tokens can apply
+   * opacity modifiers, e.g. `rgb(var(--cream) / <alpha-value>)` -> `text-cream/70`.
+   * Edit a value here and it cascades to every component automatically.
+   */
+
+  /* Semantic roles */
+  --primary: 14 29 36;       /* #0E1D24 petrol blue */
+  --secondary: 102 12 32;    /* #660C20 maroon */
+  --tertiary: 168 139 88;    /* #A88B58 gold (image 1) */
+  --quaternary: 250 246 240; /* #FAF6F0 near-white, subtle cream tint */
+
+  /* Petrol ink scale */
+  --ink: 14 29 36;           /* #0E1D24 */
+  --ink-950: 8 19 24;        /* #081318 */
+  --ink-900: 10 23 28;       /* #0A171C */
+  --ink-800: 14 29 36;       /* #0E1D24 */
+  --ink-700: 22 48 58;       /* #16303A */
+  --ink-600: 31 64 76;       /* #1F404C */
+
+  /* Gold */
+  --gold: 168 139 88;        /* #A88B58 */
+  --gold-light: 201 180 135; /* #c9b487 */
+  --gold-dark: 138 112 68;   /* #8a7044 */
+
+  /* Maroon */
+  --maroon: 102 12 32;       /* #660C20 */
+  --maroon-light: 140 23 48; /* #8c1730 */
+  --maroon-dark: 69 8 18;    /* #450812 */
+
+  /* Cream */
+  --cream: 250 246 240;      /* #FAF6F0 near-white, subtle cream tint */
+
+  /* Page canvas / text */
+  --background: 250 246 240; /* cream */
+  --foreground: 14 29 36;    /* ink   */
+
+  /*
+   * Brand typography — SINGLE SOURCE OF TRUTH.
+   * Change the family here and every heading/brand surface updates.
+   * Weights are exposed as Tailwind utilities: font-brand-light ... font-brand-black.
+   * Axes mirror Google Sans Flex defaults; tweak --brand-font-variation to restyle.
+   */
+  --font-brand: 'Google Sans Flex';
+
+  --brand-font-thin: 100;
+  --brand-font-extralight: 200;
+  --brand-font-light: 300;
+  --brand-font-normal: 400;
+  --brand-font-medium: 500;
+  --brand-font-semibold: 600;
+  --brand-font-bold: 700;
+  --brand-font-extrabold: 800;
+  --brand-font-black: 900;
+
+  --brand-font-variation: 'slnt' 0, 'wdth' 100, 'GRAD' 0, 'ROND' 0;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Apply Google Sans Flex optical sizing + variation axes wherever the brand
+   font is used (headings via font-serif / font-heading / font-brand). */
+.font-brand,
+.font-heading,
+.font-serif {
+  font-optical-sizing: auto;
+  font-variation-settings: var(--brand-font-variation);
+}
+
+/* Lenis smooth scroll (applied site-wide via <ReactLenis root> in _app.tsx).
+   These classes keep native + Lenis scrolling consistent across all portals. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  /* Brand font (Google Sans Flex) is the global default across the whole
+     portal; Inter is only a fallback if it fails to load. */
+  font-family: var(--font-brand), var(--font-inter), system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: var(--brand-font-variation);
   -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Premium type scale — SINGLE SOURCE OF TRUTH for headings, site-wide.
+ * Use semantic tags (h1…h6) and they inherit this scale automatically; only
+ * add size utilities when a one-off truly needs to differ. All headings use
+ * the brand font (Google Sans Flex).
+ */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-brand), system-ui, sans-serif;
+    font-optical-sizing: auto;
+  }
+  h1 {
+    @apply text-5xl font-brand-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl;
+  }
+  h2 {
+    @apply text-3xl font-brand-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl;
+  }
+  h3 {
+    @apply text-2xl font-brand-semibold leading-snug sm:text-3xl;
+  }
+  h4 {
+    @apply text-xl font-brand-semibold leading-snug sm:text-2xl;
+  }
+  h5 {
+    @apply text-lg font-brand-medium;
+  }
+  h6 {
+    @apply text-xs font-brand-semibold uppercase tracking-[0.25em];
+  }
 }
 
 /* Luxury text gradient */
@@ -75,7 +194,7 @@ body {
   background: #ded5c6;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#A88B58, #720E20);
+  background: linear-gradient(#A88B58, #660C20);
   border-radius: 8px;
 }
 

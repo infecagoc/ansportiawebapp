@@ -40,7 +40,7 @@ export default function ResetPassword() {
           {error && <p className="text-sm text-red-600">{error}</p>}
           <button
             type="submit"
-            className="rounded-md bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700"
+            className="rounded-md bg-blue-600 px-4 py-2 font-brand-medium text-white hover:bg-blue-700"
           >
             Update password
           </button>

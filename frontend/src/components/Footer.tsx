@@ -6,20 +6,20 @@ import { fadeUp, viewportOnce } from '@/components/landing/motion';
 
 const columns = [
   {
-    title: 'Platform',
+    title: 'Services',
     links: [
-      { label: 'Imports & Exports', href: '#work' },
-      { label: 'Payments & Ledger', href: '#work' },
-      { label: 'Documents Vault', href: '#work' },
-      { label: 'Profit Analytics', href: '#studio' },
+      { label: 'Sourcing', href: '/#work' },
+      { label: 'Quality Control', href: '/#work' },
+      { label: 'Freight & Logistics', href: '/#work' },
+      { label: 'Global Reach', href: '/#globe' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { label: 'About', href: '#studio' },
-      { label: 'Pricing', href: '/landing/pricing' },
-      { label: 'Contact', href: '#contact' },
+      { label: 'About', href: '/#studio' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Contact', href: '/contact' },
       { label: 'Sign in', href: '/auth/login' },
     ],
   },
@@ -29,29 +29,26 @@ const socials = ['in', 'X', 'f'];
 
 export default function Footer() {
   return (
-    <footer className="bg-cream px-5 pb-6">
+    <footer className="bg-cream px-6 pb-8 pt-16 sm:px-10">
       <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        className="mx-auto max-w-[1400px] overflow-hidden rounded-[36px] bg-ink-900 px-6 py-14 sm:px-16"
+        className="mx-auto max-w-[1400px]"
       >
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
           {/* Brand */}
-          <div>
-            <Link href="/landing" className="flex items-center gap-3">
+          <div className="md:max-w-sm">
+            <Link href="/" className="inline-block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/Images/lightlogo.svg" alt="Ansportia" className="h-11 w-auto" />
-              <span className="font-serif text-2xl font-bold tracking-[0.14em] text-cream">
-                ANSPORTIA
-              </span>
+              <img src="/Images/ansportia-logo-full.svg" alt="Ansportia" className="h-12 w-auto" />
             </Link>
-            <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/55">
-              The complete cloud platform for Nepal&ndash;China trade &mdash; refined
-              into one elegant workspace.
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-ink/60">
+              Your global sourcing, quality-control and shipping partner &mdash; from
+              the factory floor to your customer&apos;s door.
             </p>
-            <p className="mt-4 text-xs uppercase tracking-[0.2em] text-gold">
+            <p className="mt-4 text-xs uppercase tracking-[0.2em] text-gold-dark">
               from the house of Infeca
             </p>
             <div className="mt-6 flex gap-3">
@@ -60,7 +57,7 @@ export default function Footer() {
                   key={s}
                   href="#"
                   aria-label={s}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/15 text-sm text-cream/70 transition-all hover:border-gold hover:text-gold"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 text-sm text-ink/60 transition-all hover:border-gold hover:text-gold-dark"
                 >
                   {s}
                 </a>
@@ -68,33 +65,35 @@ export default function Footer() {
             </div>
           </div>
 
-          {columns.map((col) => (
-            <div key={col.title}>
-              <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-                {col.title}
-              </h4>
-              <ul className="space-y-3">
-                {col.links.map((l) => (
-                  <li key={l.label}>
-                    <Link
-                      href={l.href}
-                      className="text-sm text-cream/60 transition-colors hover:text-cream"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="flex gap-12 sm:gap-20">
+            {columns.map((col) => (
+              <div key={col.title}>
+                <h4 className="mb-4 text-xs font-brand-semibold uppercase tracking-[0.2em] text-gold-dark">
+                  {col.title}
+                </h4>
+                <ul className="space-y-3">
+                  {col.links.map((l) => (
+                    <li key={l.label}>
+                      <Link
+                        href={l.href}
+                        className="text-sm text-ink/60 transition-colors hover:text-ink"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-cream/10 pt-6 text-xs text-cream/45 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink/10 pt-6 text-xs text-ink/45 sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Ansportia · Infeca. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#" className="transition-colors hover:text-cream">Privacy</Link>
-            <Link href="#" className="transition-colors hover:text-cream">Terms</Link>
-            <Link href="#" className="transition-colors hover:text-cream">Security</Link>
+            <Link href="#" className="transition-colors hover:text-ink">Privacy</Link>
+            <Link href="#" className="transition-colors hover:text-ink">Terms</Link>
+            <Link href="#" className="transition-colors hover:text-ink">Security</Link>
           </div>
         </div>
       </motion.div>

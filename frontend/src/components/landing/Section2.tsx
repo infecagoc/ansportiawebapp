@@ -83,7 +83,7 @@ function FollowCard({
         transition={{ type: 'spring', stiffness: 260, damping: 22 }}
         className="pointer-events-none absolute z-20 flex h-20 w-20 items-center justify-center rounded-full bg-cream text-ink shadow-[0_10px_30px_-8px_rgba(0,0,0,0.5)]"
       >
-        <span className="flex flex-col items-center text-[11px] font-semibold uppercase tracking-wider">
+        <span className="flex flex-col items-center text-[11px] font-brand-semibold uppercase tracking-wider">
           <span className="text-xl leading-none">→</span>
           {label}
         </span>
@@ -94,7 +94,7 @@ function FollowCard({
 
 export default function Section2() {
   return (
-    <section id="work" className="scroll-mt-28 bg-cream px-5 py-10">
+    <section id="work" className="scroll-mt-28 bg-cream px-6 py-10 sm:px-10">
       <div className="mx-auto grid max-w-[1400px] gap-5 lg:grid-cols-12">
         {/* Large feature card */}
         <FollowCard
@@ -105,17 +105,18 @@ export default function Section2() {
         >
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute -top-1/3 left-1/2 h-[140%] w-[80%] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,#A88B58,transparent)] opacity-40 blur-2xl animate-pulse-slow" />
-            <div className="absolute bottom-0 left-0 h-[70%] w-[60%] rounded-full bg-[radial-gradient(closest-side,#720E20,transparent)] opacity-50 blur-2xl" />
+            <div className="absolute bottom-0 left-0 h-[70%] w-[60%] rounded-full bg-[radial-gradient(closest-side,#660C20,transparent)] opacity-50 blur-2xl" />
           </div>
-          <span className="relative z-10 text-xs font-semibold uppercase tracking-[0.25em] text-gold-light">
-            End-to-end
+          <span className="relative z-10 text-xs font-brand-semibold uppercase tracking-[0.25em] text-gold-light">
+            What we do
           </span>
-          <h3 className="relative z-10 mt-2 font-serif text-4xl font-bold text-cream sm:text-5xl">
-            Imports &amp; <span className="italic text-gold-gradient">Exports</span>
+          <h3 className="relative z-10 mt-2 font-serif text-4xl font-brand-bold text-cream sm:text-5xl">
+            Sourcing &amp; <span className="text-gold-gradient">Procurement</span>
           </h3>
           <p className="relative z-10 mt-3 max-w-md text-cream/70">
-            Track every cross-border shipment — customs, logistics and landed cost —
-            from purchase order to delivery, live.
+            We find vetted factories and suppliers across China, India and beyond —
+            negotiating the right price and quality, from low-range to high-range
+            products.
           </p>
         </FollowCard>
 
@@ -123,15 +124,15 @@ export default function Section2() {
         <div className="grid gap-5 lg:col-span-5">
           {[
             {
-              tag: 'Money',
-              title: 'Payments & Ledger',
-              desc: 'Multi-currency reconciliation in USD, CNY and NPR — balanced automatically.',
+              tag: 'Inspect',
+              title: 'Quality Control',
+              desc: 'On-the-ground QC and inspection before goods ship — what you order is exactly what arrives.',
               grad: 'from-maroon to-ink',
             },
             {
-              tag: 'Records',
-              title: 'Documents Vault',
-              desc: 'Invoices, packing lists and certificates — encrypted, searchable, audit-ready.',
+              tag: 'Deliver',
+              title: 'Freight & Logistics',
+              desc: 'Door-to-door shipping across China, Nepal, Australia, UK, India and the USA.',
               grad: 'from-gold-dark to-ink',
             },
           ].map((c, i) => (
@@ -141,10 +142,10 @@ export default function Section2() {
               index={i + 1}
               className={`flex min-h-[200px] flex-col justify-end rounded-[28px] bg-gradient-to-br ${c.grad} p-7`}
             >
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-cream/60">
+              <span className="text-xs font-brand-semibold uppercase tracking-[0.25em] text-cream/60">
                 {c.tag}
               </span>
-              <h3 className="mt-1.5 font-serif text-2xl font-bold text-cream">
+              <h3 className="mt-1.5 font-serif text-2xl font-brand-bold text-cream">
                 {c.title}
               </h3>
               <p className="mt-2 text-sm text-cream/65">{c.desc}</p>

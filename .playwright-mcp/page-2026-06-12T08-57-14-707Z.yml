@@ -1,0 +1,261 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - img [ref=e7]
+    - img [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - heading "We source, inspect & ship your products worldwide." [level=1] [ref=e14]:
+        - generic [ref=e15]: We
+        - generic [ref=e16]: source,
+        - generic [ref=e17]: inspect
+        - generic [ref=e18]: "&"
+        - generic [ref=e19]: ship
+        - generic [ref=e20]: your
+        - generic [ref=e21]: products
+        - generic [ref=e22]: worldwide.
+      - generic [ref=e23]:
+        - link "How we work →" [ref=e24] [cursor=pointer]:
+          - /url: /#studio
+          - text: How we work
+          - generic [ref=e25]: →
+        - link "Get a quote →" [ref=e26] [cursor=pointer]:
+          - /url: /contact
+          - text: Get a quote
+          - generic [ref=e27]: →
+    - generic [ref=e29]:
+      - link "What we do Sourcing & Procurement We find vetted factories and suppliers across China, India and beyond — negotiating the right price and quality, from low-range to high-range products. → Explore" [ref=e30]:
+        - /url: "#studio"
+        - generic [ref=e31]: What we do
+        - heading "Sourcing & Procurement" [level=3] [ref=e32]
+        - paragraph [ref=e33]: We find vetted factories and suppliers across China, India and beyond — negotiating the right price and quality, from low-range to high-range products.
+        - generic:
+          - generic:
+            - generic: →
+            - text: Explore
+      - generic [ref=e34]:
+        - link "Inspect Quality Control On-the-ground QC and inspection before goods ship — what you order is exactly what arrives. → View" [ref=e35]:
+          - /url: "#studio"
+          - generic [ref=e36]: Inspect
+          - heading "Quality Control" [level=3] [ref=e37]
+          - paragraph [ref=e38]: On-the-ground QC and inspection before goods ship — what you order is exactly what arrives.
+          - generic:
+            - generic:
+              - generic: →
+              - text: View
+        - link "Deliver Freight & Logistics Door-to-door shipping across China, Nepal, Australia, UK, India and the USA. → View" [ref=e39]:
+          - /url: "#studio"
+          - generic [ref=e40]: Deliver
+          - heading "Freight & Logistics" [level=3] [ref=e41]
+          - paragraph [ref=e42]: Door-to-door shipping across China, Nepal, Australia, UK, India and the USA.
+          - generic:
+            - generic:
+              - generic: →
+              - text: View
+    - generic [ref=e44]:
+      - text: What we do
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - paragraph [ref=e48]:
+              - generic [ref=e49]: Sourcing
+              - generic [ref=e50]: "&"
+              - generic [ref=e51]: procurement
+              - generic [ref=e52]: —
+              - generic [ref=e53]: We
+              - generic [ref=e54]: find
+              - generic [ref=e55]: the
+              - generic [ref=e56]: right
+              - generic [ref=e57]: factories
+              - generic [ref=e58]: and
+              - generic [ref=e59]: suppliers
+              - generic [ref=e60]: worldwide
+              - generic [ref=e61]: and
+              - generic [ref=e62]: negotiate
+              - generic [ref=e63]: price,
+              - generic [ref=e64]: quality
+              - generic [ref=e65]: and
+              - generic [ref=e66]: terms
+              - generic [ref=e67]: —
+              - generic [ref=e68]: from
+              - generic [ref=e69]: low-range
+              - generic [ref=e70]: to
+              - generic [ref=e71]: high-range
+              - generic [ref=e72]: products
+              - generic [ref=e73]: —
+              - generic [ref=e74]: so
+              - generic [ref=e75]: you
+              - generic [ref=e76]: invest
+              - generic [ref=e77]: with
+              - generic [ref=e78]: confidence.
+            - generic [ref=e79]:
+              - generic [ref=e80]: Supplier sourcing
+              - generic [ref=e81]: Negotiation
+              - generic [ref=e82]: Sampling
+              - generic [ref=e83]: Factory audits
+              - generic [ref=e84]: China · India
+          - link "See capabilities →" [ref=e85] [cursor=pointer]:
+            - /url: /#contact
+            - text: See capabilities
+            - generic [ref=e86]: →
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - paragraph [ref=e89]:
+              - generic [ref=e90]: Quality
+              - generic [ref=e91]: control
+              - generic [ref=e92]: —
+              - generic [ref=e93]: Independent
+              - generic [ref=e94]: inspection
+              - generic [ref=e95]: "on"
+              - generic [ref=e96]: the
+              - generic [ref=e97]: ground
+              - generic [ref=e98]: before
+              - generic [ref=e99]: anything
+              - generic [ref=e100]: leaves
+              - generic [ref=e101]: the
+              - generic [ref=e102]: factory.
+              - generic [ref=e103]: Defects
+              - generic [ref=e104]: caught
+              - generic [ref=e105]: early,
+              - generic [ref=e106]: standards
+              - generic [ref=e107]: verified,
+              - generic [ref=e108]: your
+              - generic [ref=e109]: brand
+              - generic [ref=e110]: protected.
+            - generic [ref=e111]:
+              - generic [ref=e112]: QC inspection
+              - generic [ref=e113]: Pre-shipment checks
+              - generic [ref=e114]: Compliance
+              - generic [ref=e115]: Reporting
+          - link "See capabilities →" [ref=e116] [cursor=pointer]:
+            - /url: /#contact
+            - text: See capabilities
+            - generic [ref=e117]: →
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - paragraph [ref=e120]:
+              - generic [ref=e121]: Freight
+              - generic [ref=e122]: "&"
+              - generic [ref=e123]: fulfilment
+              - generic [ref=e124]: —
+              - generic [ref=e125]: Door-to-door
+              - generic [ref=e126]: logistics
+              - generic [ref=e127]: across
+              - generic [ref=e128]: China,
+              - generic [ref=e129]: Nepal,
+              - generic [ref=e130]: Australia,
+              - generic [ref=e131]: the
+              - generic [ref=e132]: UK,
+              - generic [ref=e133]: India
+              - generic [ref=e134]: and
+              - generic [ref=e135]: the
+              - generic [ref=e136]: USA
+              - generic [ref=e137]: —
+              - generic [ref=e138]: air,
+              - generic [ref=e139]: sea
+              - generic [ref=e140]: and
+              - generic [ref=e141]: last
+              - generic [ref=e142]: mile
+              - generic [ref=e143]: handled
+              - generic [ref=e144]: as
+              - generic [ref=e145]: one
+              - generic [ref=e146]: seamless
+              - generic [ref=e147]: journey.
+            - generic [ref=e148]:
+              - generic [ref=e149]: Air & sea freight
+              - generic [ref=e150]: Customs
+              - generic [ref=e151]: Warehousing
+              - generic [ref=e152]: Last mile
+          - link "See capabilities →" [ref=e153] [cursor=pointer]:
+            - /url: /#contact
+            - text: See capabilities
+            - generic [ref=e154]: →
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - generic [ref=e158]: "0"
+        - paragraph [ref=e159]: Countries served
+      - generic [ref=e160]:
+        - generic [ref=e162]: 0+
+        - paragraph [ref=e163]: Shipments delivered
+      - generic [ref=e164]:
+        - generic [ref=e166]: 0+
+        - paragraph [ref=e167]: Suppliers vetted
+      - generic [ref=e168]:
+        - generic [ref=e170]: 0%
+        - paragraph [ref=e171]: On-time delivery
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - text: Global reach
+        - heading "We move goods everywhere you grow." [level=2] [ref=e175]
+        - paragraph [ref=e176]: From factory floors in China and India to doorsteps in Nepal, Australia, the UK and the USA — drag the globe to explore the routes we run every day.
+        - paragraph [ref=e177]:
+          - generic [ref=e178]: ↻
+          - text: Drag to rotate
+      - generic [ref=e180]: Loading globe…
+    - generic [ref=e182]:
+      - heading "Ready to ship?" [level=2] [ref=e183]
+      - paragraph [ref=e184]: Tell us what you want to source and where it needs to go — we'll handle sourcing, QC and delivery, end to end.
+      - generic [ref=e185]:
+        - textbox "you@company.com" [ref=e186]
+        - button "Get a quote →" [ref=e187] [cursor=pointer]:
+          - text: Get a quote
+          - generic [ref=e188]: →
+      - paragraph [ref=e189]:
+        - text: Or write to us at
+        - link "hello@ansportia.com" [ref=e190] [cursor=pointer]:
+          - /url: mailto:hello@ansportia.com
+  - contentinfo [ref=e192]:
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - link "Ansportia" [ref=e196] [cursor=pointer]:
+            - /url: /
+            - img "Ansportia" [ref=e197]
+          - paragraph [ref=e198]: Your global sourcing, quality-control and shipping partner — from the factory floor to your customer's door.
+          - paragraph [ref=e199]: from the house of Infeca
+          - generic [ref=e200]:
+            - link "in" [ref=e201] [cursor=pointer]:
+              - /url: "#"
+            - link "X" [ref=e202] [cursor=pointer]:
+              - /url: "#"
+            - link "f" [ref=e203] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - heading "Services" [level=4] [ref=e206]
+            - list [ref=e207]:
+              - listitem [ref=e208]:
+                - link "Sourcing" [ref=e209] [cursor=pointer]:
+                  - /url: /#work
+              - listitem [ref=e210]:
+                - link "Quality Control" [ref=e211] [cursor=pointer]:
+                  - /url: /#work
+              - listitem [ref=e212]:
+                - link "Freight & Logistics" [ref=e213] [cursor=pointer]:
+                  - /url: /#work
+              - listitem [ref=e214]:
+                - link "Global Reach" [ref=e215] [cursor=pointer]:
+                  - /url: /#globe
+          - generic [ref=e216]:
+            - heading "Company" [level=4] [ref=e217]
+            - list [ref=e218]:
+              - listitem [ref=e219]:
+                - link "About" [ref=e220] [cursor=pointer]:
+                  - /url: /#studio
+              - listitem [ref=e221]:
+                - link "Pricing" [ref=e222] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e223]:
+                - link "Contact" [ref=e224] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e225]:
+                - link "Sign in" [ref=e226] [cursor=pointer]:
+                  - /url: /auth/login
+      - generic [ref=e227]:
+        - paragraph [ref=e228]: © 2026 Ansportia · Infeca. All rights reserved.
+        - generic [ref=e229]:
+          - link "Privacy" [ref=e230] [cursor=pointer]:
+            - /url: /#
+          - link "Terms" [ref=e231] [cursor=pointer]:
+            - /url: /#
+          - link "Security" [ref=e232] [cursor=pointer]:
+            - /url: /#

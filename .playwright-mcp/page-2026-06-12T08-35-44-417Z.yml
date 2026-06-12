@@ -1,0 +1,118 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - button "Menu" [ref=e7] [cursor=pointer]:
+        - generic [ref=e11]: Menu
+      - link "Ansportia home" [ref=e13] [cursor=pointer]:
+        - /url: /
+        - img "Ansportia" [ref=e14]
+      - generic [ref=e15]:
+        - link "Account" [ref=e16] [cursor=pointer]:
+          - /url: /auth/login
+          - img [ref=e17]
+          - generic [ref=e20]: Account
+        - link "Let's Talk" [ref=e21] [cursor=pointer]:
+          - /url: /contact
+  - generic [ref=e22]:
+    - paragraph [ref=e23]: Contact us
+    - heading "Let's Talk" [level=1] [ref=e24]
+    - paragraph [ref=e25]:
+      - text: Ready to streamline your cross-border trade? Call us on
+      - link "+977 1 400 0000" [ref=e26] [cursor=pointer]:
+        - /url: tel:+97714000000
+      - text: ", email"
+      - link "hello@ansportia.com" [ref=e27] [cursor=pointer]:
+        - /url: mailto:hello@ansportia.com
+      - text: ", or fill out the form below to get started."
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Planning your next trade move? Let's talk." [level=2] [ref=e30]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e34]: Name*
+            - textbox "Your name" [ref=e35]
+          - generic [ref=e36]:
+            - generic [ref=e37]: Organisation*
+            - textbox "Company name" [ref=e38]
+          - generic [ref=e39]:
+            - generic [ref=e40]: Email*
+            - textbox "you@company.com" [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]: Phone
+            - textbox "+977 …" [ref=e44]
+        - group "I'm interested in" [ref=e45]:
+          - generic [ref=e46]: I'm interested in
+          - generic [ref=e47]:
+            - generic [ref=e48] [cursor=pointer]:
+              - checkbox "Imports & Exports" [ref=e49]
+              - text: Imports & Exports
+            - generic [ref=e50] [cursor=pointer]:
+              - checkbox "Payments & Ledger" [ref=e51]
+              - text: Payments & Ledger
+            - generic [ref=e52] [cursor=pointer]:
+              - checkbox "Documents Vault" [ref=e53]
+              - text: Documents Vault
+            - generic [ref=e54] [cursor=pointer]:
+              - checkbox "Custom / Consulting" [ref=e55]
+              - text: Custom / Consulting
+        - generic [ref=e56]:
+          - text: What can we help you with?
+          - textbox "Enter message here" [ref=e57]
+        - button "Book a Demo" [ref=e58] [cursor=pointer]
+    - contentinfo [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - link "Ansportia ANSPORTIA" [ref=e63] [cursor=pointer]:
+              - /url: /
+              - img "Ansportia" [ref=e64]
+              - generic [ref=e65]: ANSPORTIA
+            - paragraph [ref=e66]: The complete cloud platform for Nepal–China trade — refined into one elegant workspace.
+            - paragraph [ref=e67]: from the house of Infeca
+            - generic [ref=e68]:
+              - link "in" [ref=e69] [cursor=pointer]:
+                - /url: "#"
+              - link "X" [ref=e70] [cursor=pointer]:
+                - /url: "#"
+              - link "f" [ref=e71] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e72]:
+            - heading "Platform" [level=4] [ref=e73]
+            - list [ref=e74]:
+              - listitem [ref=e75]:
+                - link "Imports & Exports" [ref=e76] [cursor=pointer]:
+                  - /url: /contact#work
+              - listitem [ref=e77]:
+                - link "Payments & Ledger" [ref=e78] [cursor=pointer]:
+                  - /url: /contact#work
+              - listitem [ref=e79]:
+                - link "Documents Vault" [ref=e80] [cursor=pointer]:
+                  - /url: /contact#work
+              - listitem [ref=e81]:
+                - link "Profit Analytics" [ref=e82] [cursor=pointer]:
+                  - /url: /contact#studio
+          - generic [ref=e83]:
+            - heading "Company" [level=4] [ref=e84]
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - link "About" [ref=e87] [cursor=pointer]:
+                  - /url: /contact#studio
+              - listitem [ref=e88]:
+                - link "Pricing" [ref=e89] [cursor=pointer]:
+                  - /url: /pricing
+              - listitem [ref=e90]:
+                - link "Contact" [ref=e91] [cursor=pointer]:
+                  - /url: /contact#contact
+              - listitem [ref=e92]:
+                - link "Sign in" [ref=e93] [cursor=pointer]:
+                  - /url: /auth/login
+        - generic [ref=e94]:
+          - paragraph [ref=e95]: © 2026 Ansportia · Infeca. All rights reserved.
+          - generic [ref=e96]:
+            - link "Privacy" [ref=e97] [cursor=pointer]:
+              - /url: /contact#
+            - link "Terms" [ref=e98] [cursor=pointer]:
+              - /url: /contact#
+            - link "Security" [ref=e99] [cursor=pointer]:
+              - /url: /contact#

@@ -7,10 +7,10 @@ import { fadeUp, stagger, viewportOnce } from './motion';
 type Stat = { value: number; suffix: string; label: string };
 
 const stats: Stat[] = [
-  { value: 12, suffix: 'M+', label: 'Trade value managed (USD)' },
-  { value: 4800, suffix: '+', label: 'Orders processed' },
-  { value: 99.9, suffix: '%', label: 'Platform uptime' },
-  { value: 36, suffix: 'hr', label: 'Avg. clearance time' },
+  { value: 6, suffix: '', label: 'Countries served' },
+  { value: 4800, suffix: '+', label: 'Shipments delivered' },
+  { value: 1200, suffix: '+', label: 'Suppliers vetted' },
+  { value: 99, suffix: '%', label: 'On-time delivery' },
 ];
 
 function Counter({ value, suffix }: { value: number; suffix: string }) {
@@ -39,7 +39,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export default function Section4() {
   return (
-    <section className="bg-cream px-5 py-24">
+    <section className="bg-cream px-6 py-24 sm:px-10">
       <motion.div
         variants={stagger}
         initial="hidden"
@@ -49,7 +49,7 @@ export default function Section4() {
       >
         {stats.map((s) => (
           <motion.div key={s.label} variants={fadeUp} className="px-4 text-center">
-            <div className="font-serif text-5xl font-bold text-ink sm:text-6xl">
+            <div className="font-serif text-5xl font-brand-bold text-ink sm:text-6xl">
               <Counter value={s.value} suffix={s.suffix} />
             </div>
             <p className="mx-auto mt-3 max-w-[12rem] text-sm text-ink/55">{s.label}</p>

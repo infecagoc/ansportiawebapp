@@ -1,0 +1,363 @@
+- generic [ref=e3]:
+  - generic:
+    - button "Skip to accessibility"
+    - button "Skip to content"
+    - button "Skip to footer"
+  - banner [ref=e4]:
+    - list:
+      - listitem:
+        - button "Menu" [ref=e5] [cursor=pointer]:
+          - emphasis
+          - generic: Menu
+      - listitem:
+        - generic:
+          - button "Search" [ref=e6] [cursor=pointer]:
+            - img
+            - generic: Search
+          - link "Store locator" [ref=e7] [cursor=pointer]:
+            - /url: /store-locator
+            - img
+            - generic: Store locator
+          - link "Favourites" [ref=e8] [cursor=pointer]:
+            - /url: /wishlist
+            - generic [ref=e9]:
+              - img
+            - generic: Favourites
+    - heading "Official Rolex Website - Swiss Luxury Watches" [level=1] [ref=e11]:
+      - generic [ref=e12]: Official Rolex Website - Swiss Luxury Watches
+      - img
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: Roland-Garros
+              - heading "Mirra, this crown is yours" [level=2]
+          - link "Discover more about Mirra Andreeva" [ref=e15] [cursor=pointer]:
+            - /url: /rolex-family/tennis/mirra-andreeva
+            - text: Discover more
+      - generic:
+        - generic:
+          - generic:
+            - list:
+              - listitem:
+                - article:
+                  - link "Rolex presents Oyster Story":
+                    - /url: /oyster-story
+                    - figure "Rolex presents Oyster Story":
+                      - generic:
+                        - generic: Rolex presents
+                        - heading "Oyster Story" [level=3]
+              - listitem:
+                - article:
+                  - link "Natural stone dials To each stone its own dial":
+                    - /url: /watchmaking/features/dials/natural-stone-dials
+                    - figure "Natural stone dials To each stone its own dial":
+                      - generic:
+                        - generic: Natural stone dials
+                        - heading "To each stone its own dial" [level=3]
+              - listitem:
+                - article:
+                  - link "Rolex watches Oyster Perpetual":
+                    - /url: /watches/oyster-perpetual
+                    - figure "Rolex watches Oyster Perpetual":
+                      - generic:
+                        - generic: Rolex watches
+                        - heading "Oyster Perpetual" [level=3]
+      - generic:
+        - generic:
+          - img
+    - generic [ref=e16] [cursor=pointer]:
+      - generic:
+        - img "Land-Dweller"
+      - generic:
+        - generic:
+          - generic:
+            - paragraph: Rolex watches
+            - heading "The Rolex collection" [level=2]
+          - link "Discover more - The collection" [ref=e17]:
+            - /url: /watches
+            - text: Continue
+  - contentinfo [ref=e18]:
+    - img [ref=e20]
+    - generic [ref=e28]:
+      - navigation [ref=e30]:
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Rolex watches and accessories" [ref=e33] [cursor=pointer]:
+              - /url: /watches
+            - list "Rolex watches and accessories" [ref=e34]:
+              - listitem [ref=e35]:
+                - link "Air-King" [ref=e36] [cursor=pointer]:
+                  - /url: /watches/air-king
+              - listitem [ref=e37]:
+                - link "Cosmograph Daytona" [ref=e38] [cursor=pointer]:
+                  - /url: /watches/cosmograph-daytona
+              - listitem [ref=e39]:
+                - link "Datejust" [ref=e40] [cursor=pointer]:
+                  - /url: /watches/datejust
+              - listitem [ref=e41]:
+                - link "Lady-Datejust" [ref=e42] [cursor=pointer]:
+                  - /url: /watches/lady-datejust
+              - listitem [ref=e43]:
+                - link "Day-Date" [ref=e44] [cursor=pointer]:
+                  - /url: /watches/day-date
+              - listitem [ref=e45]:
+                - link "Explorer" [ref=e46] [cursor=pointer]:
+                  - /url: /watches/explorer
+              - listitem [ref=e47]:
+                - link "Explorer II" [ref=e48] [cursor=pointer]:
+                  - /url: /watches/explorer-ii
+              - listitem [ref=e49]:
+                - link "GMT-Master II" [ref=e50] [cursor=pointer]:
+                  - /url: /watches/gmt-master-ii
+              - listitem [ref=e51]:
+                - link "Land-Dweller" [ref=e52] [cursor=pointer]:
+                  - /url: /watches/land-dweller
+              - listitem [ref=e53]:
+                - link "Oyster Perpetual" [ref=e54] [cursor=pointer]:
+                  - /url: /watches/oyster-perpetual
+              - listitem [ref=e55]:
+                - link "Sea-Dweller" [ref=e56] [cursor=pointer]:
+                  - /url: /watches/sea-dweller
+              - listitem [ref=e57]:
+                - link "Deepsea" [ref=e58] [cursor=pointer]:
+                  - /url: /watches/deepsea
+              - listitem [ref=e59]:
+                - link "Sky-Dweller" [ref=e60] [cursor=pointer]:
+                  - /url: /watches/sky-dweller
+              - listitem [ref=e61]:
+                - link "Submariner" [ref=e62] [cursor=pointer]:
+                  - /url: /watches/submariner
+              - listitem [ref=e63]:
+                - link "Yacht-Master" [ref=e64] [cursor=pointer]:
+                  - /url: /watches/yacht-master
+              - listitem [ref=e65]:
+                - link "Yacht-Master II" [ref=e66] [cursor=pointer]:
+                  - /url: /watches/yacht-master-ii
+              - listitem [ref=e67]:
+                - link "1908" [ref=e68] [cursor=pointer]:
+                  - /url: /watches/1908
+              - listitem [ref=e69]:
+                - link "New watches 2026" [ref=e70] [cursor=pointer]:
+                  - /url: /watches/new-watches
+              - listitem [ref=e71]:
+                - link "Find your Rolex" [ref=e72] [cursor=pointer]:
+                  - /url: /watches/find-rolex
+              - listitem [ref=e73]:
+                - link "Configure your Rolex" [ref=e74] [cursor=pointer]:
+                  - /url: /watches/configure
+              - listitem [ref=e75]:
+                - link "Men's watches" [ref=e76] [cursor=pointer]:
+                  - /url: /watches/find-rolex/man
+              - listitem [ref=e77]:
+                - link "Women's watches" [ref=e78] [cursor=pointer]:
+                  - /url: /watches/find-rolex/woman
+              - listitem [ref=e79]:
+                - link "Gold watches" [ref=e80] [cursor=pointer]:
+                  - /url: /watches/find-rolex/gold
+              - listitem [ref=e81]:
+                - link "Accessories" [ref=e82] [cursor=pointer]:
+                  - /url: /accessories
+          - listitem [ref=e83]:
+            - link "Watchmaking" [ref=e84] [cursor=pointer]:
+              - /url: /watchmaking/excellence-in-the-making
+            - list "Watchmaking" [ref=e85]:
+              - listitem [ref=e86]:
+                - link "At the core of excellence" [ref=e87] [cursor=pointer]:
+                  - /url: /watchmaking/excellence-in-the-making/quest-for-excellence
+              - listitem [ref=e88]:
+                - link "Behind the seal" [ref=e89] [cursor=pointer]:
+                  - /url: /watchmaking/manufactory
+              - listitem [ref=e90]:
+                - link "Rolex anatomy" [ref=e91] [cursor=pointer]:
+                  - /url: /watchmaking/features
+          - listitem [ref=e92]:
+            - link "Oyster Story" [ref=e93] [cursor=pointer]:
+              - /url: /oyster-story
+            - list "Oyster Story" [ref=e94]:
+              - listitem [ref=e95]:
+                - link "The film" [ref=e96] [cursor=pointer]:
+                  - /url: /oyster-story/oyster-film
+              - listitem [ref=e97]:
+                - link "The exhibition" [ref=e98] [cursor=pointer]:
+                  - /url: /oyster-story/oyster-exhibition
+          - listitem [ref=e99]:
+            - link "About Rolex" [ref=e100] [cursor=pointer]:
+              - /url: /about-rolex
+            - list "About Rolex" [ref=e101]:
+              - listitem [ref=e102]:
+                - link "Sustainability" [ref=e103] [cursor=pointer]:
+                  - /url: /about-rolex/sustainable-development
+              - listitem [ref=e104]:
+                - link "Behind the crown" [ref=e105] [cursor=pointer]:
+                  - /url: /about-rolex/behind-the-crown
+              - listitem [ref=e106]:
+                - link "History" [ref=e107] [cursor=pointer]:
+                  - /url: /about-rolex/history/1905-1919
+          - listitem [ref=e108]:
+            - generic [ref=e109]: Sports, Arts and Planet
+            - list "Sports, Arts and Planet" [ref=e110]:
+              - listitem [ref=e111]:
+                - link "Rolex and sports" [ref=e112] [cursor=pointer]:
+                  - /url: /rolex-and-sports
+              - listitem [ref=e113]:
+                - link "Perpetual Planet" [ref=e114] [cursor=pointer]:
+                  - /url: /perpetual-initiatives/perpetual-planet
+              - listitem [ref=e115]:
+                - link "Perpetual Arts" [ref=e116] [cursor=pointer]:
+                  - /url: /perpetual-initiatives/perpetual-arts
+              - listitem [ref=e117]:
+                - link "The Rolex family" [ref=e118] [cursor=pointer]:
+                  - /url: /rolex-family
+          - listitem [ref=e119]:
+            - generic [ref=e120]: Buying and servicing
+            - list "Buying and servicing" [ref=e121]:
+              - listitem [ref=e122]:
+                - link "Buying a Rolex" [ref=e123] [cursor=pointer]:
+                  - /url: /buying-a-rolex/experiencing-a-rolex
+              - listitem [ref=e124]:
+                - link "Rolex Certified Pre-Owned" [ref=e125] [cursor=pointer]:
+                  - /url: /buying-a-rolex/rolex-certified-pre-owned
+              - listitem [ref=e126]:
+                - link "Servicing your Rolex" [ref=e127] [cursor=pointer]:
+                  - /url: /watch-care-and-service/our-servicing-philosophy
+              - listitem [ref=e128]:
+                - link "Caring for your Rolex" [ref=e129] [cursor=pointer]:
+                  - /url: /watch-care-and-service/caring-for-your-rolex
+              - listitem [ref=e130]:
+                - link "Store locator" [ref=e131] [cursor=pointer]:
+                  - /url: /store-locator
+              - listitem [ref=e132]:
+                - link "Service Centre locator" [ref=e133] [cursor=pointer]:
+                  - /url: /watch-care-and-service/service-locator
+          - listitem [ref=e134]:
+            - generic [ref=e135]: Help and support
+            - list "Help and support" [ref=e136]:
+              - listitem [ref=e137]:
+                - link "Frequently asked questions" [ref=e138] [cursor=pointer]:
+                  - /url: /watch-care-and-service/faq
+              - listitem [ref=e139]:
+                - link "File a report" [ref=e140] [cursor=pointer]:
+                  - /url: /about-rolex/sustainable-development/file-a-report
+          - listitem [ref=e141]:
+            - generic [ref=e142]: Accessibility
+            - list "Accessibility" [ref=e143]:
+              - listitem [ref=e144]:
+                - button "Read our statement" [ref=e145] [cursor=pointer]
+          - listitem [ref=e146]:
+            - generic [ref=e147]: Media
+            - list "Media" [ref=e148]:
+              - listitem [ref=e149]:
+                - link "Wallpapers" [ref=e150] [cursor=pointer]:
+                  - /url: /media/wallpapers
+              - listitem [ref=e151]:
+                - link "Brochures" [ref=e152] [cursor=pointer]:
+                  - /url: /media/brochures
+              - listitem [ref=e153]:
+                - link "User guides" [ref=e154] [cursor=pointer]:
+                  - /url: /media/user-guides
+          - listitem [ref=e155]:
+            - generic [ref=e156]: Official channels
+            - list "Official channels" [ref=e157]:
+              - listitem [ref=e158]:
+                - link "YouTube - Open in new tab" [ref=e159] [cursor=pointer]:
+                  - /url: https://www.youtube.com/rolex
+                  - img
+                  - text: YouTube
+              - listitem [ref=e160]:
+                - link "Instagram - Open in new tab" [ref=e161] [cursor=pointer]:
+                  - /url: https://www.instagram.com/rolex
+                  - img
+                  - text: Instagram
+              - listitem [ref=e162]:
+                - link "Threads - Open in new tab" [ref=e163] [cursor=pointer]:
+                  - /url: https://www.threads.com/@rolex
+                  - img
+                  - text: Threads
+              - listitem [ref=e164]:
+                - link "Facebook - Open in new tab" [ref=e165] [cursor=pointer]:
+                  - /url: https://www.facebook.com/rolex
+                  - img
+                  - text: Facebook
+              - listitem [ref=e166]:
+                - link "LinkedIn - Open in new tab" [ref=e167] [cursor=pointer]:
+                  - /url: https://linkedin.com/company/rolex
+                  - img
+                  - text: LinkedIn
+              - listitem [ref=e168]:
+                - link "X - Open in new tab" [ref=e169] [cursor=pointer]:
+                  - /url: https://x.com/ROLEX
+                  - img
+                  - text: X
+              - listitem [ref=e170]:
+                - link "Pinterest - Open in new tab" [ref=e171] [cursor=pointer]:
+                  - /url: https://www.pinterest.com/rolex
+                  - img
+                  - text: Pinterest
+              - listitem [ref=e172]:
+                - link "Weibo - Open in new tab" [ref=e173] [cursor=pointer]:
+                  - /url: https://weibo.com/rolex
+                  - img
+                  - text: Weibo
+              - listitem [ref=e174]:
+                - button "WeChat - Open in popin" [ref=e175] [cursor=pointer]:
+                  - img
+                  - text: WeChat
+              - listitem [ref=e176]:
+                - link "Douyin - Open in new tab" [ref=e177] [cursor=pointer]:
+                  - /url: https://v.douyin.com/uo9k_ivcQTQ/
+                  - img
+                  - text: Douyin
+              - listitem [ref=e178]:
+                - link "Line - Open in new tab" [ref=e179] [cursor=pointer]:
+                  - /url: https://lin.ee/uGN7jOr1
+                  - img
+                  - text: Line
+          - listitem [ref=e180]:
+            - generic [ref=e181]: Our platforms
+            - list "Our platforms" [ref=e182]:
+              - listitem [ref=e183]:
+                - link "Newsroom - Open in new tab" [ref=e184] [cursor=pointer]:
+                  - /url: https://newsroom.rolex.com/?cmpid=rolexcom_newsroom
+                  - img
+                  - text: Newsroom
+              - listitem [ref=e185]:
+                - link "Rolex.org - Open in new tab" [ref=e186] [cursor=pointer]:
+                  - /url: https://www.rolex.org/
+                  - img
+                  - text: Rolex.org
+      - separator [ref=e187]
+      - generic [ref=e189]:
+        - button "English - Switch language" [ref=e190] [cursor=pointer]:
+          - img
+          - text: "International: English"
+        - generic [ref=e191]:
+          - switch "Reduce motion" [ref=e192] [cursor=pointer]:
+            - emphasis [ref=e195]: Reduce motion
+          - switch "Contrast active" [ref=e196] [cursor=pointer]:
+            - emphasis [ref=e199]: Contrast active
+      - list [ref=e201]:
+        - listitem [ref=e202]:
+          - link "Terms of use" [ref=e203] [cursor=pointer]:
+            - /url: /legal-notices/terms-of-use
+          - text: "-"
+        - listitem [ref=e204]:
+          - link "Privacy notice" [ref=e205] [cursor=pointer]:
+            - /url: /legal-notices/privacy-notice
+          - text: "-"
+        - listitem [ref=e206]:
+          - link "Cookies" [ref=e207] [cursor=pointer]:
+            - /url: /legal-notices/cookies
+    - complementary [ref=e210] [cursor=pointer]:
+      - figure:
+        - generic:
+          - img "Rolex.org"
+      - generic:
+        - generic:
+          - paragraph: Discover our Perpetual Initiatives
+          - link "open in new tab" [ref=e211]:
+            - /url: https://www.rolex.org/
+            - img
+            - text: Visit Rolex.org

@@ -14,11 +14,11 @@ export default function Features() {
     <>
       <LandingNav />
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="mb-8 text-3xl font-bold">Features</h1>
+        <h1 className="mb-8 text-3xl font-brand-bold">Features</h1>
         <div className="grid gap-6 sm:grid-cols-2">
           {FEATURES.map(([title, desc]) => (
             <div key={title} className="rounded-lg border bg-white p-5">
-              <h3 className="mb-1 font-semibold">{title}</h3>
+              <h3 className="mb-1 font-brand-semibold">{title}</h3>
               <p className="text-sm text-gray-600">{desc}</p>
             </div>
           ))}

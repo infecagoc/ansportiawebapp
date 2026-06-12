@@ -12,19 +12,19 @@ type Service = {
 
 const services: Service[] = [
   {
-    lead: 'Trade operations',
-    body: 'We turn the chaos of cross-border commerce into one calm workflow. Orders, supplier purchases, shipments and customs — captured the moment they happen and kept perfectly in sync.',
-    tags: ['Imports', 'Exports', 'Customer orders', 'Supplier purchases', 'Logistics'],
+    lead: 'Sourcing & procurement',
+    body: 'We find the right factories and suppliers worldwide and negotiate price, quality and terms — from low-range to high-range products — so you invest with confidence.',
+    tags: ['Supplier sourcing', 'Negotiation', 'Sampling', 'Factory audits', 'China · India'],
   },
   {
-    lead: 'Financial clarity',
-    body: 'Every figure reconciles itself. Multi-currency payments, expenses and receivables roll into a living ledger so your real margin is never more than a glance away.',
-    tags: ['Multi-currency', 'Payments', 'Expenses', 'Profit analytics', 'Receivables'],
+    lead: 'Quality control',
+    body: 'Independent inspection on the ground before anything leaves the factory. Defects caught early, standards verified, your brand protected.',
+    tags: ['QC inspection', 'Pre-shipment checks', 'Compliance', 'Reporting'],
   },
   {
-    lead: 'Compliance & documents',
-    body: 'Invoices, packing lists and certificates live in one encrypted vault — searchable, versioned and ready for any audit or border the moment you need them.',
-    tags: ['Document vault', 'Invoices', 'Certificates', 'Audit trail', 'Signed URLs'],
+    lead: 'Freight & fulfilment',
+    body: 'Door-to-door logistics across China, Nepal, Australia, the UK, India and the USA — air, sea and last mile handled as one seamless journey.',
+    tags: ['Air & sea freight', 'Customs', 'Warehousing', 'Last mile'],
   },
 ];
 
@@ -55,7 +55,7 @@ function RevealParagraph({ text }: { text: string }) {
   return (
     <p
       ref={ref}
-      className="flex flex-wrap font-serif text-3xl font-medium leading-snug text-cream sm:text-4xl"
+      className="flex flex-wrap font-serif text-3xl font-brand-medium leading-snug text-cream sm:text-4xl"
     >
       {words.map((w, i) => {
         const start = i / words.length;
@@ -72,9 +72,9 @@ function RevealParagraph({ text }: { text: string }) {
 
 export default function Section3() {
   return (
-    <section id="studio" className="scroll-mt-28 bg-cream px-5 py-10">
+    <section id="studio" className="scroll-mt-28 bg-cream px-6 py-10 sm:px-10">
       <div className="mx-auto max-w-[1400px] rounded-[36px] bg-ink-900 px-6 py-24 sm:px-16 sm:py-32">
-        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+        <span className="text-xs font-brand-semibold uppercase tracking-[0.3em] text-gold">
           What we do
         </span>
 
@@ -96,7 +96,7 @@ export default function Section3() {
               </div>
               <Link
                 href="#contact"
-                className="group flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-cream/80 transition-colors hover:text-cream"
+                className="group flex items-center gap-2 whitespace-nowrap text-sm font-brand-semibold text-cream/80 transition-colors hover:text-cream"
               >
                 See capabilities
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gold-gradient text-ink transition-transform group-hover:translate-x-1">

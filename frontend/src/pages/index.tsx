@@ -1,10 +1,17 @@
-import type { GetServerSideProps } from 'next';
+import Head from 'next/head';
+import LandingPage from '@/components/landing/LandingPage';
 
-// Root path redirects to the landing page.
-export const getServerSideProps: GetServerSideProps = async () => {
-  return { redirect: { destination: '/landing', permanent: false } };
-};
-
-export default function Index() {
-  return null;
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Ansportia - from the house of Infeca</title>
+        <meta
+          name="description"
+          content="Ansportia is your global sourcing, quality-control and logistics partner — we source, inspect and ship products across China, Nepal, Australia, the UK, India and the USA."
+        />
+      </Head>
+      <LandingPage />
+    </>
+  );
 }

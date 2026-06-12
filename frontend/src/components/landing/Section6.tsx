@@ -15,7 +15,7 @@ export default function Section6() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-28 bg-cream px-5 py-32">
+    <section id="contact" className="scroll-mt-28 bg-cream px-6 py-32 sm:px-10">
       <motion.div
         variants={stagger}
         initial="hidden"
@@ -25,13 +25,13 @@ export default function Section6() {
       >
         <motion.h2
           variants={fadeUp}
-          className="font-serif text-5xl font-bold leading-tight text-ink sm:text-7xl"
+          className="font-serif text-5xl font-brand-bold leading-tight text-ink sm:text-7xl"
         >
-          Stay in the <span className="italic text-gold-gradient">loop!</span>
+          Ready to <span className="text-gold-gradient">ship?</span>
         </motion.h2>
         <motion.p variants={fadeUp} className="mx-auto mt-6 max-w-xl text-lg text-ink/60">
-          Get a monthly note on new features, trade insights and the craft behind
-          Ansportia. No noise &mdash; just the good stuff.
+          Tell us what you want to source and where it needs to go &mdash; we&apos;ll
+          handle sourcing, QC and delivery, end to end.
         </motion.p>
 
         <motion.form
@@ -49,9 +49,9 @@ export default function Section6() {
           />
           <button
             type="submit"
-            className="group flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-cream transition-transform hover:scale-[1.03]"
+            className="group flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-brand-semibold text-cream transition-transform hover:scale-[1.03]"
           >
-            {sent ? 'Subscribed ✓' : 'Subscribe'}
+            {sent ? 'Sent ✓' : 'Get a quote'}
             {!sent && (
               <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gold-gradient text-[10px] text-ink transition-transform group-hover:translate-x-0.5">
                 →
@@ -64,7 +64,7 @@ export default function Section6() {
           Or write to us at{' '}
           <a
             href="mailto:hello@ansportia.com"
-            className="font-medium text-ink underline-offset-4 hover:underline"
+            className="font-brand-medium text-ink underline-offset-4 hover:underline"
           >
             hello@ansportia.com
           </a>

@@ -8,7 +8,7 @@ import * as THREE from 'three';
 const GOLD = '#A88B58';
 const GOLD_LIGHT = '#c9b487';
 const MAROON = '#9a1a30';
-const CREAM = '#E8E1D6';
+const CREAM = '#FAF6F0';
 
 function latLngToVec3(lat: number, lng: number, r: number): THREE.Vector3 {
   const phi = (90 - lat) * (Math.PI / 180);

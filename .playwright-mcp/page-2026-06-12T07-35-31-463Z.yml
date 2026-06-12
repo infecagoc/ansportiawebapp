@@ -1,0 +1,273 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - img [ref=e7]
+    - img [ref=e10]
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - heading "Ansportia runs your entire cross-border trade — with effortless precision." [level=1] [ref=e15]:
+        - generic [ref=e16]: Ansportia
+        - generic [ref=e17]: runs your
+        - generic [ref=e18]: entire
+        - generic [ref=e19]: cross-border
+        - generic [ref=e20]: trade —
+        - generic [ref=e21]: with
+        - generic [ref=e22]: effortless
+        - generic [ref=e23]: precision.
+      - generic [ref=e24]:
+        - link "Read about the platform →" [ref=e25] [cursor=pointer]:
+          - /url: /#studio
+          - text: Read about the platform
+          - generic [ref=e26]: →
+        - link "Explore the platform →" [ref=e27] [cursor=pointer]:
+          - /url: /#work
+          - text: Explore the platform
+          - generic [ref=e28]: →
+    - generic [ref=e30]:
+      - link "End-to-end Imports & Exports Track every cross-border shipment — customs, logistics and landed cost — from purchase order to delivery, live. → Explore" [ref=e31]:
+        - /url: "#studio"
+        - generic [ref=e32]: End-to-end
+        - heading "Imports & Exports" [level=3] [ref=e33]
+        - paragraph [ref=e34]: Track every cross-border shipment — customs, logistics and landed cost — from purchase order to delivery, live.
+        - generic:
+          - generic:
+            - generic: →
+            - text: Explore
+      - generic [ref=e35]:
+        - link "Money Payments & Ledger Multi-currency reconciliation in USD, CNY and NPR — balanced automatically. → View" [ref=e36]:
+          - /url: "#studio"
+          - generic [ref=e37]: Money
+          - heading "Payments & Ledger" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Multi-currency reconciliation in USD, CNY and NPR — balanced automatically.
+          - generic:
+            - generic:
+              - generic: →
+              - text: View
+        - link "Records Documents Vault Invoices, packing lists and certificates — encrypted, searchable, audit-ready. → View" [ref=e40]:
+          - /url: "#studio"
+          - generic [ref=e41]: Records
+          - heading "Documents Vault" [level=3] [ref=e42]
+          - paragraph [ref=e43]: Invoices, packing lists and certificates — encrypted, searchable, audit-ready.
+          - generic:
+            - generic:
+              - generic: →
+              - text: View
+    - generic [ref=e45]:
+      - text: What we do
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - paragraph [ref=e49]:
+              - generic [ref=e50]: Trade
+              - generic [ref=e51]: operations
+              - generic [ref=e52]: —
+              - generic [ref=e53]: We
+              - generic [ref=e54]: turn
+              - generic [ref=e55]: the
+              - generic [ref=e56]: chaos
+              - generic [ref=e57]: of
+              - generic [ref=e58]: cross-border
+              - generic [ref=e59]: commerce
+              - generic [ref=e60]: into
+              - generic [ref=e61]: one
+              - generic [ref=e62]: calm
+              - generic [ref=e63]: workflow.
+              - generic [ref=e64]: Orders,
+              - generic [ref=e65]: supplier
+              - generic [ref=e66]: purchases,
+              - generic [ref=e67]: shipments
+              - generic [ref=e68]: and
+              - generic [ref=e69]: customs
+              - generic [ref=e70]: —
+              - generic [ref=e71]: captured
+              - generic [ref=e72]: the
+              - generic [ref=e73]: moment
+              - generic [ref=e74]: they
+              - generic [ref=e75]: happen
+              - generic [ref=e76]: and
+              - generic [ref=e77]: kept
+              - generic [ref=e78]: perfectly
+              - generic [ref=e79]: in
+              - generic [ref=e80]: sync.
+            - generic [ref=e81]:
+              - generic [ref=e82]: Imports
+              - generic [ref=e83]: Exports
+              - generic [ref=e84]: Customer orders
+              - generic [ref=e85]: Supplier purchases
+              - generic [ref=e86]: Logistics
+          - link "See capabilities →" [ref=e87] [cursor=pointer]:
+            - /url: /#contact
+            - text: See capabilities
+            - generic [ref=e88]: →
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - paragraph [ref=e91]:
+              - generic [ref=e92]: Financial
+              - generic [ref=e93]: clarity
+              - generic [ref=e94]: —
+              - generic [ref=e95]: Every
+              - generic [ref=e96]: figure
+              - generic [ref=e97]: reconciles
+              - generic [ref=e98]: itself.
+              - generic [ref=e99]: Multi-currency
+              - generic [ref=e100]: payments,
+              - generic [ref=e101]: expenses
+              - generic [ref=e102]: and
+              - generic [ref=e103]: receivables
+              - generic [ref=e104]: roll
+              - generic [ref=e105]: into
+              - generic [ref=e106]: a
+              - generic [ref=e107]: living
+              - generic [ref=e108]: ledger
+              - generic [ref=e109]: so
+              - generic [ref=e110]: your
+              - generic [ref=e111]: real
+              - generic [ref=e112]: margin
+              - generic [ref=e113]: is
+              - generic [ref=e114]: never
+              - generic [ref=e115]: more
+              - generic [ref=e116]: than
+              - generic [ref=e117]: a
+              - generic [ref=e118]: glance
+              - generic [ref=e119]: away.
+            - generic [ref=e120]:
+              - generic [ref=e121]: Multi-currency
+              - generic [ref=e122]: Payments
+              - generic [ref=e123]: Expenses
+              - generic [ref=e124]: Profit analytics
+              - generic [ref=e125]: Receivables
+          - link "See capabilities →" [ref=e126] [cursor=pointer]:
+            - /url: /#contact
+            - text: See capabilities
+            - generic [ref=e127]: →
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - paragraph [ref=e130]:
+              - generic [ref=e131]: Compliance
+              - generic [ref=e132]: "&"
+              - generic [ref=e133]: documents
+              - generic [ref=e134]: —
+              - generic [ref=e135]: Invoices,
+              - generic [ref=e136]: packing
+              - generic [ref=e137]: lists
+              - generic [ref=e138]: and
+              - generic [ref=e139]: certificates
+              - generic [ref=e140]: live
+              - generic [ref=e141]: in
+              - generic [ref=e142]: one
+              - generic [ref=e143]: encrypted
+              - generic [ref=e144]: vault
+              - generic [ref=e145]: —
+              - generic [ref=e146]: searchable,
+              - generic [ref=e147]: versioned
+              - generic [ref=e148]: and
+              - generic [ref=e149]: ready
+              - generic [ref=e150]: for
+              - generic [ref=e151]: any
+              - generic [ref=e152]: audit
+              - generic [ref=e153]: or
+              - generic [ref=e154]: border
+              - generic [ref=e155]: the
+              - generic [ref=e156]: moment
+              - generic [ref=e157]: you
+              - generic [ref=e158]: need
+              - generic [ref=e159]: them.
+            - generic [ref=e160]:
+              - generic [ref=e161]: Document vault
+              - generic [ref=e162]: Invoices
+              - generic [ref=e163]: Certificates
+              - generic [ref=e164]: Audit trail
+              - generic [ref=e165]: Signed URLs
+          - link "See capabilities →" [ref=e166] [cursor=pointer]:
+            - /url: /#contact
+            - text: See capabilities
+            - generic [ref=e167]: →
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e172]: 0M+
+        - paragraph [ref=e173]: Trade value managed (USD)
+      - generic [ref=e174]:
+        - generic [ref=e176]: 0+
+        - paragraph [ref=e177]: Orders processed
+      - generic [ref=e178]:
+        - generic [ref=e180]: 0%
+        - paragraph [ref=e181]: Platform uptime
+      - generic [ref=e182]:
+        - generic [ref=e184]: 0hr
+        - paragraph [ref=e185]: Avg. clearance time
+    - generic [ref=e187]:
+      - generic [ref=e188]:
+        - text: One connected corridor
+        - heading "Every route, live on one globe." [level=2] [ref=e189]
+        - paragraph [ref=e190]: Watch shipments move along your Nepal–China trade lanes in real time. Drag the globe to explore each corridor — from Kathmandu to Beijing, Shanghai, Hong Kong and beyond.
+        - paragraph [ref=e191]:
+          - generic [ref=e192]: ↻
+          - text: Drag to rotate
+      - generic [ref=e194]: Loading globe…
+    - generic [ref=e196]:
+      - heading "Stay in the loop!" [level=2] [ref=e197]
+      - paragraph [ref=e198]: Get a monthly note on new features, trade insights and the craft behind Ansportia. No noise — just the good stuff.
+      - generic [ref=e199]:
+        - textbox "you@company.com" [ref=e200]
+        - button "Subscribe →" [ref=e201] [cursor=pointer]:
+          - text: Subscribe
+          - generic [ref=e202]: →
+      - paragraph [ref=e203]:
+        - text: Or write to us at
+        - link "hello@ansportia.com" [ref=e204] [cursor=pointer]:
+          - /url: mailto:hello@ansportia.com
+  - contentinfo [ref=e206]:
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - generic [ref=e209]:
+          - link "Ansportia ANSPORTIA" [ref=e210] [cursor=pointer]:
+            - /url: /
+            - img "Ansportia" [ref=e211]
+            - generic [ref=e212]: ANSPORTIA
+          - paragraph [ref=e213]: The complete cloud platform for Nepal–China trade — refined into one elegant workspace.
+          - paragraph [ref=e214]: from the house of Infeca
+          - generic [ref=e215]:
+            - link "in" [ref=e216] [cursor=pointer]:
+              - /url: "#"
+            - link "X" [ref=e217] [cursor=pointer]:
+              - /url: "#"
+            - link "f" [ref=e218] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e219]:
+          - heading "Platform" [level=4] [ref=e220]
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - link "Imports & Exports" [ref=e223] [cursor=pointer]:
+                - /url: /#work
+            - listitem [ref=e224]:
+              - link "Payments & Ledger" [ref=e225] [cursor=pointer]:
+                - /url: /#work
+            - listitem [ref=e226]:
+              - link "Documents Vault" [ref=e227] [cursor=pointer]:
+                - /url: /#work
+            - listitem [ref=e228]:
+              - link "Profit Analytics" [ref=e229] [cursor=pointer]:
+                - /url: /#studio
+        - generic [ref=e230]:
+          - heading "Company" [level=4] [ref=e231]
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - link "About" [ref=e234] [cursor=pointer]:
+                - /url: /#studio
+            - listitem [ref=e235]:
+              - link "Pricing" [ref=e236] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e237]:
+              - link "Contact" [ref=e238] [cursor=pointer]:
+                - /url: /#contact
+            - listitem [ref=e239]:
+              - link "Sign in" [ref=e240] [cursor=pointer]:
+                - /url: /auth/login
+      - generic [ref=e241]:
+        - paragraph [ref=e242]: © 2026 Ansportia · Infeca. All rights reserved.
+        - generic [ref=e243]:
+          - link "Privacy" [ref=e244] [cursor=pointer]:
+            - /url: /#
+          - link "Terms" [ref=e245] [cursor=pointer]:
+            - /url: /#
+          - link "Security" [ref=e246] [cursor=pointer]:
+            - /url: /#

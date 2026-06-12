@@ -5,7 +5,7 @@ export default function About() {
     <>
       <LandingNav />
       <main className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="mb-4 text-3xl font-bold">About ANSPORTIA</h1>
+        <h1 className="mb-4 text-3xl font-brand-bold">About ANSPORTIA</h1>
         <p className="text-gray-600">
           ANSPORTIA is a cloud-based trading management system built to streamline
           import/export operations between Nepal and China &mdash; from customer
